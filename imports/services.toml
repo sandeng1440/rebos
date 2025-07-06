@@ -1,0 +1,26 @@
+[managers.system]
+items = [
+  "bluez",
+  "bluez-utils",
+  "blueman",
+  "networkmanager",
+  "network-manager-applet",
+  "power-profiles-daemon",
+  'ufw',
+  'gufw',
+  "xdg-desktop-portal-gtk",
+  "xdg-desktop-portal",
+]
+
+[managers.serv_startup]
+items = [
+  "bluetooth",
+  "NetworkManager",
+  "power-profiles-daemon",
+  'ufw',
+]
+
+[managers.serv_user_startup]
+items = [
+  'xdg-desktop-portal',
+]

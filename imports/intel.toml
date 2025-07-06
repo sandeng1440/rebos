@@ -1,0 +1,11 @@
+[managers.system]
+items = [
+"mesa",
+"xf86-video-intel",
+"vulkan-intel",
+"lib32-vulkan-intel",
+"intel-media-driver",
+"intel-gmmlib",
+"intel-compute-runtime",
+"intel-graphite-compiler",
+]

@@ -1,0 +1,16 @@
+[managers.system]
+items = [
+  "sddm",
+  'layer-shell-qt',
+  'layer-shell-qt5',
+  'qt5-grahicaleffects',
+  'qt5-svg',
+  'qt5-quickcontrols2',
+  'sddm-theme-corners-git',
+  'ttf-atkinson-hyperlegible',
+]
+
+[managers.serv_startup]
+items = [
+"sddm",
+]

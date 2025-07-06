@@ -1,0 +1,6 @@
+begin = [
+"system",
+]
+end = [
+"flatpak"
+]

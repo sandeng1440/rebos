@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+
+# System files
+#
+sudo install -o root -m 644 -C -D -t /etc/sddm.conf.d ~/.config/rebos/system-files/sddm.conf
+# sudo install -o root -m 644 -C -D -t /etc/xdg/weston ~/.config/rebos/system-files/weston.ini
+sudo install -o root -m 644 -C -D -t /usr/share/sddm/niri ~/.config/rebos/system-files/sddm-niri.kdl
+
+## ufw setup
+#
+if [ -f "$HOME/.config/rebos/system-files/ufw_rules.conf" ]; then
+  sudo ufw reset
+  while IFS= read -r line; do
+    # Skip comments and empty lines
+    if [[ ! $line =~ ^# && ! -z $line ]]; then
+      eval sudo $line
+    fi
+  done < "$HOME/.config/rebos/system-files/ufw_rules.conf"
+else
+  echo "Configuration file not found!"
+fi
+sudo ufw enable
+
+# Home files
+#
+for dots in ~/.config/rebos/homeFiles/config/*; do
+  install -C -D -t ~/.config ~/.config/rebos/homeFiles/config/$dots
+done

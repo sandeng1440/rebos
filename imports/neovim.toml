@@ -1,0 +1,23 @@
+[managers.system]
+items = [
+"neovim",
+"fd",
+"ripgrep",
+"make",
+"unzip",
+"wget",
+"gcc",
+"fzf",
+"imagemagick",
+"luarocks",
+"lua",
+"lua51",
+"npm",
+"neovim-web-devicons-git",
+"tree-sitter",
+# languages
+"go",
+"python",
+"python-pipx",
+"nodejs",
+]

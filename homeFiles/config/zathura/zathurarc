@@ -1,0 +1,5 @@
+include "../../.cache/wal/colors-zathura"
+
+set highlight-color "#000000"
+set hightlight-fg "#f7d702"
+set highlight-transparency "0.75"

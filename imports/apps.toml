@@ -1,0 +1,21 @@
+[managers.system]
+items = [
+  "localsend-bin",
+  "keepassxc",
+  "betterbird-bin",
+  'grayjay',
+  'mpd',
+  'mpv',
+  'gthumb',
+  'lutris',
+  'libreoffice-fresh',
+  'okular',
+  'evince',
+  # zathura
+  'zathura',
+  'zaread-git',
+  'zathura-pdf-mupdf',
+  'zathura-ps',
+  'zathura-djvu',
+  'zathura-cb',
+]

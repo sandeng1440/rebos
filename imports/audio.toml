@@ -1,0 +1,11 @@
+[managers.system]
+items = [
+"pipewire",
+"pipewire-alsa",
+"pipewire-audio",
+"pipewire-jack",
+"pipewire-pulse",
+"wireplumber",
+"pavucontrol",
+"qpwgraph",
+]
