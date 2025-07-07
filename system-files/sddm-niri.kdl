@@ -19,10 +19,10 @@ input {
     // disabled-on-external-mouse
   }
   warp-mouse-to-focus
-  focus-follows-mouse max-scroll-amount="0%"
+  focus-follows-mouse max-scroll-amount="95%"
 }
 binds {
-  XF86MonBrightnessUp allow-when-locked=true { spawn "brightnessctl" "-e4" "-n2" "set" "1%+"; }
+  XF86MonBrightnessUp allow-when-locked=true { spawn "brightnessctl" "-e4" "-n2" "set" "5%+"; }
   XF86MonBrightnessDown allow-when-locked=true { spawn "brightnessctl" "-e4" "-n2" "set" "1%-"; }
   // Mod+TouchpadScrollDown { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.02+"; }
   // Mod+TouchpadScrollUp   { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.02-"; }
