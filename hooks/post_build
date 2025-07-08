@@ -23,6 +23,7 @@ sudo ufw enable
 
 # Home files
 #
+install -C --target-directory=$HOME ~/.config/rebos/homeFiles/.gitconfig
 for dots in ~/.config/rebos/homeFiles/config/*; do
   install -C -d ~/.config/rebos/homeFiles/config/$dots ~/.config
 done

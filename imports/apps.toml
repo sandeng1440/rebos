@@ -4,6 +4,7 @@ items = [
   "keepassxc",
   "betterbird-bin",
   'grayjay',
+  'zotero-git',
   'mpd',
   'mpv',
   'gthumb',
