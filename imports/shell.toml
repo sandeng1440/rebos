@@ -1,5 +1,7 @@
 [managers.system]
 items = [
   'fish',
+  'zsh',
   'starship',
+  'eza',
 ]

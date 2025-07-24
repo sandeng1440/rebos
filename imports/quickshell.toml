@@ -1,0 +1,8 @@
+[managers.system]
+items = [
+  'qt6-svg',
+  'qt6-imageformats',
+  'qt6-multimedia',
+  'qt6-5compat',
+  'quickshell-git',
+]

@@ -259,9 +259,9 @@ environment {
 // See the binds section below for more spawn examples.
 
 // This line starts waybar, a commonly used bar for Wayland compositors.
-spawn-at-startup "swww-daemon"
-spawn-at-startup "swaync"
-spawn-at-startup "waybar"
+// spawn-at-startup "swww-daemon"
+// spawn-at-startup "swaync"
+// spawn-at-startup "waybar"
 // spawn-at-startup "wallpaper-cycle"
 spawn-at-startup "xwayland-satellite" 
 spawn-at-startup "nm-applet" "--indicator"
@@ -270,6 +270,7 @@ spawn-at-startup "blueman"
 spawn-at-startup "wlsunset" "-s" "18:00" "-S" "7:00" "-t" "3000" "-T" "5500"
 spawn-at-startup "niri" "msg" "action" "focus-workspace" "2"
 spawn-at-startup "wl-paste" "--watch" "cliphist" "store"
+spawn-at-startup "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
 
 prefer-no-csd
 screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"

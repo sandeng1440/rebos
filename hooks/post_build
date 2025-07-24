@@ -1,5 +1,13 @@
 #!/usr/bin/env bash
 
+# Home files
+#
+rebos_cfg_dir=~/.config/rebos
+home_cfg_src="$rebos_cfg_dir/homeFiles/config/"
+home_cfg_dest=~/.config/
+rsync -aP "$rebos_cfg_dir/homeFiles/.gitconfig" ~/
+rsync -raP "$home_cfg_src" "$home_cfg_dest"
+
 # System files
 #
 sudo install -o root -m 644 -C -D -t /etc/sddm.conf.d ~/.config/rebos/system-files/sddm.conf
@@ -21,9 +29,3 @@ else
 fi
 sudo ufw enable
 
-# Home files
-#
-install -C --target-directory=$HOME ~/.config/rebos/homeFiles/.gitconfig
-for dots in ~/.config/rebos/homeFiles/config/*; do
-  install -C -d ~/.config/rebos/homeFiles/config/$dots ~/.config
-done

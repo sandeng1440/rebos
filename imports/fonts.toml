@@ -1,12 +1,13 @@
 [managers.system]
 items = [
-"noto-fonts",
-"noto-fonts-emoji",
-"ttf-nerd-fonts-symbols",
-"ttf-jetbrains-mono-nerd",
-"ttf-firacode-nerd",
-"ttf-cascadia-code-nerd",
-"ttf-radio-canada",
-"ttf-dm-fonts-git",
-"ttf-google-fonts-git",
+  "noto-fonts",
+  "noto-fonts-cjk",
+  "noto-fonts-emoji",
+  "ttf-nerd-fonts-symbols",
+  "ttf-jetbrains-mono-nerd",
+  "ttf-firacode-nerd",
+  "ttf-cascadia-code-nerd",
+  "ttf-radio-canada",
+  "ttf-dm-fonts-git",
+  # "ttf-google-fonts-git",
 ]

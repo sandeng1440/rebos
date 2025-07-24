@@ -59,16 +59,25 @@ if test -z "$PARALLEL_HOME"
   set -gx PARALLEL_HOME "$XDG_CONFIG_HOME/parallel"
 end
 
+if test -z "$STARSHIP_CONFIG"
+  set -gx STARSHIP_CONFIG $XDG_CONFIG_HOME/starship/starship.toml
+end
+
+if test -z "$STARSHIP_CACHE"
+  set -gx STARSHIP_CACHE $XDG_CACHE_HOME/starship
+end
+
+alias rgc='rebos gen commit'
+alias rgb='rebos gen current build'
 fish_add_path $HOME/.cargo/bin
 fish_add_path $HOME/.local/bin
 
 if status is-interactive
   set -g fish_greeting
   fish_vi_key_bindings
+
   if type -q starship
     starship init fish | source
-    set -gx STARSHIP_CACHE $XDG_CACHE_HOME/starship
-    set -gx STARSHIP_CONFIG $XDG_CONFIG_HOME/starship/starship.toml
   end
 
   # fzf 
@@ -77,5 +86,3 @@ if status is-interactive
   end
 end
 
-alias rgc='rebos gen commit'
-alias rgb='rebos gen current build'
